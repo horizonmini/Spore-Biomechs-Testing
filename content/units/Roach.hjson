@@ -1,9 +1,9 @@
 type: legs
+health: 850
+hitSize: 15
 speed: 0.7425
 drag: 0.4
-hitSize: 10
 targetAir: false
-health: 575
 legCount: 4
 legMoveSpace: 0.8
 weapons: [{
@@ -16,8 +16,8 @@ weapons: [{
   ejectEffect: casing2
   bullet: {
     type: ArtilleryBulletType
-    speed: 2
-    damage: 45
+    speed: 2.5
+    damage: 75
     sprite: shell
     hitEffect: blastExplosion
     knockback: 0.8
@@ -30,6 +30,31 @@ weapons: [{
     splashDamage: 10
     backColor: 8FFE09
     frontColor: 8FFE09
+    status: dissolving
+    statusDuration: 1000
   }
   shootSound: artillery
 }]
+
+    abilities: [
+        {
+        type: mindustry.entities.abilities.RepairFieldAbility
+        healEffect: {
+        type: WaveEffect
+        lifetime: 30
+        sizeFrom: 0
+        sizeTo: 5
+        strokeFrom: 2
+        strokeTo: 0
+        lightColor: 73FFAEFF
+        colorFrom: 73FFAEFF
+        colorTo: 57D993FF
+        }
+        range: 1
+        amount: 15
+        reload: 150
+            }
+    ]
+outlineColor: 303a45
+research: sporepod-pool
+researchCostMultiplier: 3

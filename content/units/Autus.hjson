@@ -1,0 +1,96 @@
+type: legs
+health: 1100
+armor: 4
+speed: 0.95
+legCount: 4
+legLength: 13
+legExtension: 7
+legBaseOffset: 6
+immunities: [
+		burning
+		melting
+		]
+weapons: [{
+  name: flamer
+  mirror: false
+  top: false  
+  x: 0
+  y: -3
+  reload: 5
+  shootStatus: shielded
+  shootStatusDuration: 80
+  recoil: 0
+  rotate: false
+  ejectEffect: none
+  velocityRnd: 0.2
+  shootCone: 20
+	bullet: {
+    type: BasicBulletType
+    collidesAir: true
+    speed: 5
+    damage: 65
+    width: 0.1
+    height: 0.1
+    shootEffect: {
+    type: ParticleEffect
+    particles: 30
+    sizeFrom: 5
+    sizeTo: 0
+    length: 80
+    lifetime: 25
+    interp: circleOut
+    lightColor: 8B73C7
+    colorFrom: 8B73C7
+    colorTo: 8B73C7
+    cone: 10
+    }
+    smokeEffect: none
+    lifetime: 12,
+	despawnEffect: none
+    hittable: false
+    reflectable: false
+	hitEffect: {
+  type: ParticleEffect
+    line: true
+    particles: 5
+    lifetime: 60
+    interp: circleOut
+    length: 50
+    cone: -30
+    lenFrom: 5
+    lenTo: 0
+    colorFrom: 26142a
+    colorTo: 26142a
+	}
+	pierce: true
+	incendAmount: 5
+     }
+  shootSound: artillery
+}]
+parts: [
+{
+type: RegionPart
+suffix: -hand
+mirror: true
+progress: warmup
+layerOffset: -0.001
+x: 3
+y: 3
+moveX: -1.5
+moveY: -1.25
+moveRot: 10
+}
+]
+abilities: [
+  {
+    type: RegenAbility
+    amount: 0.45
+  }
+  {
+  type: LiquidExplodeAbility
+  liquid: neoplasm
+  amount: 100
+  }
+]
+healColor: 590e14
+outlineColor: 303a45

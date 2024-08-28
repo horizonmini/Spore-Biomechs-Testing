@@ -1,0 +1,15 @@
+planet: serpulo
+sector: 92
+captureWave: 20
+research: {
+parent: "frozenForest"
+objectives: [
+  spore-pod,scatter
+  {
+    type: SectorComplete
+    preset: "frozenForest"
+  }]}
+alwaysUnlocked: false
+difficulty: 5
+  allowLaunchLoadout: true
+  allowLaunchSchematics: true

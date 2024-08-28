@@ -1,16 +1,20 @@
-type: mech
-health: 450
-speed: 1.5
-size: 15
-range: 0
+type: legs
+health: 225
+range: 50
+speed: 1.25
+legCount: 4
+hitSize: 9
+flying: false
 weapons: [{
   name: Baneling
   x: 0
-  y: 0
-  reload: 20
+  shootY: 0
+  reload: 10
+  mirror: false
   bullet: {
     type: BombBulletType
     damage: 0
+    rangeOverride: 30
     ammoMultiplier: 1
     killShooter: true
     lifetime: 10
@@ -21,6 +25,31 @@ weapons: [{
     hittable: false
     collidesAir: true
     instantDisappear: true
+    status: dissolving
+    statusDuration: 500
+    buildingDamageMultiplier: 2
   }
   shootSound: explosion
 }]
+abilities: [
+        {
+        type: mindustry.entities.abilities.RepairFieldAbility
+        healEffect: {
+        type: WaveEffect
+        lifetime: 30
+        sizeFrom: 0
+        sizeTo: 5
+        strokeFrom: 2
+        strokeTo: 0
+        lightColor: 73FFAEFF
+        colorFrom: 73FFAEFF
+        colorTo: 57D993FF
+        }
+        range: 1
+        amount: 15
+        reload: 150
+            }
+    ]
+outlineColor: 303a45
+research: sporepod-pool
+researchCostMultiplier: 3

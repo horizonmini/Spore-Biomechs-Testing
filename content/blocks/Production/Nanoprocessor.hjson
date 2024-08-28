@@ -1,0 +1,26 @@
+type: GenericCrafter
+size: 2
+consumes: {
+power: 1
+items: {
+items: [
+spore-pod/5
+]}} 
+outputItem: biomass/1
+requirements: [
+silicon/75
+graphite/90
+]
+category: crafting
+craftTime: 50
+research: {
+parent: spore-press
+researchCostMultiplier: 2.5
+objectives: [
+    spore-pod
+    {
+      type: SectorComplete
+      preset: "Ski"
+    }
+  ]
+}

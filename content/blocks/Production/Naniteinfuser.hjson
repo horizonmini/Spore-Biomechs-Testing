@@ -1,0 +1,22 @@
+type: GenericCrafter
+size: 2
+consumes: {
+power: 4.25
+items: {
+items: [
+biomass/5
+BioSil/5
+silicon/10
+]}} 
+outputItem: Nanitealloy/1
+requirements: [
+BioSil/95
+graphite/275
+silicon/325
+]
+category: crafting
+craftTime: 50
+research:{
+  parent: sporepod-BioSynthesizer
+  researchCostMultiplier: 2.5
+}

@@ -1,0 +1,44 @@
+Type: UnitAssembler
+health: 2500
+size: 6
+areaSize: 13
+droneType: Zeta
+plans: [
+  {
+  unit: Gorgon
+  requirements: [
+    vela/1
+    sporepod-Roach/5
+    sporepod-Zergling/10
+  ]
+  time: 3600
+  }
+  {
+  unit: Basilisk
+  requirements: [
+    sporepod-Behomoth/2
+    sporepod-Baneling/10
+    sporepod-Guardian/5
+    toxopid/1
+  ]
+  time: 10800
+  }
+]
+consumes: {
+power: 5
+}
+category: units
+research: {
+  parent: sporepod-Assembler
+  objectives: [
+    exponential-reconstructor
+  ]
+}
+researchCostMultiplier: 3
+researchCostMultiplier: 1.125
+requirements: [
+  silicon/1000
+  biomass/800
+  Nanitealloy/750
+  VCA/250
+]

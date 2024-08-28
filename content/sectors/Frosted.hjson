@@ -1,0 +1,16 @@
+planet: serpulo
+sector: 71
+captureWave: 20
+research: {
+parent: "Bird"
+objectives: [
+    {
+      type: SectorComplete
+      preset: "Bird"
+    }
+  ]
+}
+alwaysUnlocked: false
+difficulty: 6
+  allowLaunchLoadout: true
+  allowLaunchSchematics: true

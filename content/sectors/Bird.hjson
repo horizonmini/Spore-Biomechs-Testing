@@ -1,0 +1,16 @@
+planet: serpulo
+sector: 117
+research: {
+parent: "Ski"
+objectives: [
+    dagger,sporepod-biomass
+    {
+      type: SectorComplete
+      preset: "Ski"
+    }
+  ]
+}
+alwaysUnlocked: false
+difficulty: 5
+  allowLaunchLoadout: true
+  allowLaunchSchematics: true

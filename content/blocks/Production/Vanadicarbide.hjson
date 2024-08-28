@@ -1,0 +1,22 @@
+type: HeatProducer
+size: 2
+consumes: {
+  power: 5
+    items: [
+    Vanadium/5
+    BioSil/3
+    ]
+}
+outputItem: VCA/1
+heatOutput: 5
+requirements: [
+silicon/150
+graphite/270
+Vanadium/125
+]
+category: crafting
+craftTime: 90
+research:{
+  parent: sporepod-Carbine-composite-smelter
+  researchCostMultiplier: 3
+}

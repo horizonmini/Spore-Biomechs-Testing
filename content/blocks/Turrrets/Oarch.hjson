@@ -1,0 +1,50 @@
+type: ItemTurret
+health: 2500
+range: 250
+size: 2
+reload: 40
+ammoEjectBack: 5
+ammoUseEffect: casing4
+cooldownTime: 0.03
+recoil: 1.1
+shootSound: artillery
+ammoTypes: {
+biomass: {
+lifetime: 100
+speed: 3
+ammoMultiplier: 2
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+splashDamage: 5
+damage: 50
+splashDamageRadius: 25
+width: 12
+height: 15
+sprite: sporepod-ExplodingTNT
+fragBullets: 5
+fragBullet: {
+  type: BasicBulletType
+  speed: 10
+  lifetime: 15
+  hitSize: 1
+  damage: 5
+  splashDamage: 10
+  splashDamageRadius: 10
+  }
+}}
+coolantMultiplier: 2
+consumes: {
+  power: 2
+  coolant: {
+    type: ConsumeCoolant
+    amount: 1
+}}
+requirements: [
+graphite/675
+Nanitealloy/250
+biomass/150
+]
+category: turret
+research: ripple
+researchCostMultiplier: 1
+outlineColor: 303a45

@@ -1,0 +1,60 @@
+type: ItemTurret
+health: 1500
+range: 225
+size: 3
+shootY: -0.25
+shoot: {
+shots: 2
+shotDelay: 5
+}
+targetAir: true
+targetGround: false
+reload: 35
+coolantMultiplier: 4
+shootSound: shootBig
+ammoTypes: {
+  biomass: {
+    type: FlakBulletType
+    width: 15
+    height: 21
+    lifetime: 60
+    speed: 5
+    damage: 25
+    splashDamage: 37
+    pierce: false
+    ammoMultiplier: 1.55
+    frontColor: 45368F
+    backColor: 45368F
+    fragBullets: 4
+    fragBullet: {
+      damage: 5
+    }
+  }
+} 
+  consumes: { 
+     coolant: { 
+       type: ConsumeCoolant
+       amount: 0.25
+     } 
+   }
+requirements: [
+spore-pod/75
+graphite/100
+silicon/25
+] 
+category: turret
+research: {
+  objectives: [
+    biomass
+    {
+      type: SectorComplete
+      preset: "Ski"
+    }
+  ]
+  parent: scatter
+  requirements: [
+    spore-pod/1700
+    silicon/4200
+    graphite/3200
+]}
+outlineColor: 303a45

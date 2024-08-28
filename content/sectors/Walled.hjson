@@ -1,0 +1,17 @@
+planet: serpulo
+sector: 141
+captureWave: 40
+research: {
+parent: "Frosted"
+objectives: [
+    sporepod-Azurite,sporepod-Vanadium,sporepod-biomass
+    {
+      type: SectorComplete
+      preset: "Frosted"
+    }
+  ]
+}
+alwaysUnlocked: false
+difficulty: 7
+  allowLaunchLoadout: true
+  allowLaunchSchematics: true

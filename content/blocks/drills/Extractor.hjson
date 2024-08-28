@@ -1,0 +1,29 @@
+type: Drill
+health: 800
+size: 2
+liquidBoostIntensity: 1.2
+rotateSpeed: 5
+tier: 3
+drillMultipliers: {
+   lead: 0.5,
+   copper: 1.2,
+   Azurite: 2
+}
+drawSpinSprite: false
+drillTime: 250
+consumes: {
+    liquid: {
+        liquid: water
+        amount: 0.25
+        booster: true
+        optional: true
+}
+
+}
+requirements: [
+silicon/25
+graphite/30
+]
+category: production
+research: pneumatic-drill
+buildCostMultiplier: 1.15

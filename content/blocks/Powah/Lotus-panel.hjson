@@ -1,0 +1,13 @@
+type: SolarGenerator
+size: 4
+powerProduction: 3
+requirements: [
+  silicon/175
+  Vanadium/125
+  biomass/50
+]
+category: power
+research:{
+  parent: solar-panel
+  researchCostMultiplier: 1.25
+}

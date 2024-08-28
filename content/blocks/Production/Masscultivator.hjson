@@ -1,0 +1,21 @@
+type: GenericCrafter
+health: 745
+itemCapacity: 25
+size: 3
+consumes: {
+power: 14
+liquids:[water/0.3]
+
+}
+outputItem: spore-pod/5
+requirements: [
+silicon/325
+graphite/480
+thorium/250
+]
+category: production
+craftTime: 60
+research:{
+  parent: cultivator
+  researchCostMultiplier: 1
+}

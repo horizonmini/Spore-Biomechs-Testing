@@ -1,0 +1,40 @@
+type: UnitFactory
+health: 475
+size: 3
+plans: [
+  {
+  unit: Drone
+  requirements: [
+    silicon/15
+    biomass/10
+    lead/25
+  ]
+  time: 900
+  }
+  {
+  unit: Interceptor
+  requirements: [
+    silicon/45
+    biomass/10
+  ]
+  time: 600
+  }
+  {
+  unit: Rizomorph
+  requirements: [
+    silicon/150
+    biomass/45
+  ]
+  time: 1500
+  }
+]
+consumes: {
+power: 1.425
+}
+category: units
+research: sporepod-pool
+researchCostMultiplier: 2
+requirements: [
+  silicon/250
+  biomass/75
+]

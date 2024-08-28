@@ -1,0 +1,39 @@
+type: tether
+health: 175
+range: 100
+speed: 2.5
+flying: true
+engineOffset: 3
+engineSize: 3
+rotateSpeed: 10
+mineSpeed: 3
+buildSpeed: 1
+mineTier: 5
+defaultController: minerAI
+drag: 0.08
+accel: 0.04
+mineItems: [
+        thorium
+        titanium
+]
+abilities: [
+        {
+        type: mindustry.entities.abilities.RepairFieldAbility
+        healEffect: {
+        type: WaveEffect
+        lifetime: 30
+        sizeFrom: 0
+        sizeTo: 5
+        strokeFrom: 2
+        strokeTo: 0
+        lightColor: 73FFAEFF
+        colorFrom: 73FFAEFF
+        colorTo: 57D993FF
+        }
+        range: 1
+        amount: 5
+        reload: 75
+            }
+    ]
+outlineColor: 303a45
+itemCapacity: 10

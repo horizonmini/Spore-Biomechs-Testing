@@ -1,0 +1,20 @@
+type: BurstDrill
+health: 200
+liquidBoostIntensity: 3
+size: 2
+rotateSpeed: 5
+drawSpinSprite: false
+tier: 4
+drillTime: 200
+hasPower: true
+consumes: {
+power: 1.65
+}
+requirements: [
+silicon/250
+BioSil/400
+Vanadium/250
+]
+category: production
+research: laser-drill
+buildCostMultiplier: 1.15

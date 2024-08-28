@@ -1,0 +1,49 @@
+type: flying
+health: 1250
+hitSize: 17
+speed: 3
+drag: 0.09
+engineOffset: 10
+engineSize: 4
+range: 100
+flying: true
+rotateSpeed: 2
+baseRotateSpeed: 0.6
+targetAir: true
+drag: 0.05
+accel: 0.11
+weapons: [
+{
+  name: balls
+  x: -6
+  y: -6
+  reload: 75
+  ejectEffect: none
+  shoot:{
+    type: ShootPattern
+    shots: 4
+    shotDelay: 5
+  }
+
+  bullet: standardHoming
+  bullet: {
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    instantDisappear: true
+    damage: 0
+    spawnUnit: sporepod-Bomb
+  }
+}
+]
+abilities: [
+  {
+    type: RegenAbility
+    amount: 0.5
+  }
+  {
+  type: LiquidExplodeAbility
+  liquid: neoplasm
+  amount: 200
+  }
+]
+outlineColor: 303a45

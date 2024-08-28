@@ -1,0 +1,14 @@
+type: CoreBlock
+health: 6500
+itemCapacity: 11000
+size: 4
+unitType: Hivedefender
+unitCapModifier: 32
+requirements: [
+  Nanitealloy/2000
+  biomass/3000
+  silicon/4000
+] 
+category: effect
+research: core-foundation
+researchCostMultiplier: 0.5

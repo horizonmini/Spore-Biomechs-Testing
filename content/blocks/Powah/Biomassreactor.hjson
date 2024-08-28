@@ -1,0 +1,33 @@
+type: ImpactReactor
+itemCapacity: 10
+itemDuration: 120
+hasLiquids: false
+health: 1750
+size: 4
+warmupSpeed: 0.0025
+explosionRadius: 10
+explosionDamage: 4000
+powerProduction: 25
+consumes: {
+  power: 5
+  items: {
+    items: [
+      biomass/2
+    ]
+  }
+}
+requirements: [
+  lead/1250
+  copper/1250
+  biomass/650
+  titanium/750
+  silicon/750
+  Nanitealloy/450
+]
+category: power
+research:{
+  parent: thorium-reactor
+  researchCostMultiplier: 1.25
+}
+ambientSound: fire
+ambientSoundVolume: 5

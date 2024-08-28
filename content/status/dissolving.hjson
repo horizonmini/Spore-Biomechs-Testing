@@ -1,6 +1,4 @@
-damage: 2
-name: dissolving
-description: "Mr hydro, I don't feel so good"
+damage: 1.5
 effect: {
   type: ParticleEffect
   particles: 1
@@ -8,6 +6,6 @@ effect: {
   lifetime: 30
   sizeFrom: 2
   sizeTo: 0
-  colorFrom: 8FFE09
-  colorTo: 8FFE09
+  colorFrom: A865C9
+  colorTo: A865C9
 }

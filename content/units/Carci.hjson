@@ -1,0 +1,50 @@
+type: legs
+health: 875
+armor: 1
+range: 150
+speed: 0.65
+legLength: 8
+legExtension: 4
+legBaseOffset: 5
+hitSize: 7
+legCount: 4
+targetAir: false
+weapons: [
+  {
+  name: mouth
+  shootSound: missile
+  x: 0
+  y: 0
+  reload: 60
+  ejectEffect: casing1
+  bullet: {
+    type: ArtilleryBulletType
+    backColor: 85151e
+    frontColor: 85151e
+    status: dissolving
+    statusDuration: 180
+    lifetime: 75
+    speed: 3
+    damage: 5
+    splashDamageRadius: 25
+    splashDamage: 125
+    collidesTiles: true
+    trailLength: 5
+    trailColor: 69262b
+  }}
+]
+abilities: [
+  {
+    type: RegenAbility
+    amount: 0.25
+  }
+  {
+  type: LiquidExplodeAbility
+  liquid: neoplasm
+  amount: 100
+  }
+]
+healColor: 590e14
+outlineColor: 303a45
+research: sporepod-pool
+researchCostMultiplier: 1

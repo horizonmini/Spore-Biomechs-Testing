@@ -1,33 +1,34 @@
 type: legs
-hitSize: 30
-speed: 0.75
 health: 10000
-legCount: 4
-legLength: 34
 range: 100
+hitSize: 44
+speed: 0.75
+legLength: 30
+legExtension: -15
+legBaseOffset: 10
+legCount: 4
 weapons: [
 {
   name: Behomothgun
   x: 0
   y: -23
   reload: 50
-  shots: 1
   mirror: false
   shootCone: 100
   shake: 0
   inaccuracy: 1
   ejectEffect: none
   bullet: {
-    type: ArtilleryBulletType
-    speed: 5
-    damage: 200
+    type: BasicBulletType
+    speed: 4
+    damage: 195
     sprite: shell
     hitEffect: sapExplosion
     lifetime: 100
     width: 14
     height: 14
-    backColor: A865C9
-    frontColor: A865C9
+    backColor: 8B73C7
+    frontColor: 8B73C7
     }
   shootSound: artillery
 }
@@ -38,9 +39,9 @@ weapons: [
   y: -23
   mirror: true
   bullet: {
-  type: ArtilleryBulletType
-      speed: 2
-      damage: 100
+  type: BasicBulletType
+      speed: 5
+      damage: 145
       homingPower: 2
       homingRange: 20
       hitEffect: sapExplosion
@@ -70,4 +71,24 @@ abilities: [
     spawnY: -7
     spawnTime: 550
   }
- ]
+        {
+        type: mindustry.entities.abilities.RepairFieldAbility
+        healEffect: {
+        type: WaveEffect
+        lifetime: 30
+        sizeFrom: 0
+        sizeTo: 5
+        strokeFrom: 2
+        strokeTo: 0
+        lightColor: 73FFAEFF
+        colorFrom: 73FFAEFF
+        colorTo: 57D993FF
+        }
+        range: 1
+        amount: 75
+        reload: 150
+            }
+    ]
+outlineColor: 303a45
+research: sporepod-Assembler
+researchCostMultiplier: 2
